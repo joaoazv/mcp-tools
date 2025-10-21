@@ -3,7 +3,7 @@ from fastmcp import FastMCP
 mcp = FastMCP('Component Deploy Tool')
 
 @mcp.tool()
-def write_component(r) -> str:
+def write_component(component_name) -> str:
     """
         Generate the build-config.yml, comp-{component_name}.yml and deployment-config.yml.
         Args:
